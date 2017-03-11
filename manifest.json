@@ -1,0 +1,31 @@
+{
+    "manifest_version": 2,
+
+    "name": "Snek-rs",
+    "version": "1.0",
+    "description": "A sneaker bot",
+    "author": "Sam Piazza",
+    "browser_action":
+    {
+      "default_popup": "popup.html"
+    },
+    "icons": 
+    { "16": "kanye.png",
+      "48": "kanye.png",
+      "128": "kanye.png" 
+    },
+    
+    "content_scripts": 
+    [
+      {
+        "matches": ["http://www.sneakersnstuff.com/*"],
+        "js": ["sns.js"]
+      },
+      {
+        "matches": ["http://www.nike.com/*"],
+        "js": ["nike.js"]
+      }
+    ], 
+    "permissions": 
+    ["tabs", "http://www.sneakersnstuff.com/*", "http://www.nike.com/*"]
+}   

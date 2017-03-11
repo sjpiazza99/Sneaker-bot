@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Snek-rs</title>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/popup.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <!--      -->
+</head>
+<body class="toolContainer">
+	<h4 class="header center green-text text-darken-2">Snek-rs</h1>
+		<div class="row center">
+          	<h5 class="header col s12 light">Options</h5>
+        </div>
+	<div class="optionContainer">
+		<br><br>
+        	<div>
+        		<table>
+        			<tr>
+        				<th class="col s12 green-text text-darken-2"> Toggles </th>
+        				<th class="col s12 green-text text-darken-2"> Off/On </th>
+        			</tr>
+        			<tr>
+        				<td class="col s12 blue-text text-accent-4">SNS</td>
+        				<td>
+        					<label class="switch" id="SNS">
+  								<input type="checkbox">
+  								<div class="slider round"></div>
+							</label>
+        				</td>
+        			</tr>
+        			<tr>
+        				<td class="col s12 materialize-red-text">Supreme</td>
+        				<td>
+        					<label class="switch" id="Supreme">
+  								<input type="checkbox" onclick="Supreme_Change()">
+  								<div class="slider round"></div>
+							</label>
+        				</td>
+        			</tr>
+        			<tr>
+        				<td class="col s12 orange-text text-accent-2">Nike</td>
+        				<td>
+        					<label class="switch" id="Nike">
+  								<input type="checkbox" onclick="Nike_Change()">
+  								<div class="slider round"></div>
+							</label>
+        				</td>
+        			</tr>
+        		</table>
+        	</div>
+        <br><br>
+    </div>
+  <footer class="page-footer green darken-2"></footer>
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="popup.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  </body>
+</html>
